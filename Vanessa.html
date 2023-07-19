@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE-edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Personal Portfolio Website - Vanessa Huang</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/64437529a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Vanessa_logo.png" class="logo">
+            <ul id = "sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">DS Portfolio</a></li>
+                <li><a href="#portfolio">Business Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Vanessa</span> from <br>National Taiwan University</h1>
+        </div>
+    </div>
+</div>
+<!-- -----about---------------------------------------------------------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Vanessa_user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class = "sub-title">About Me</h1>
+                <br>
+                <p align = 'justify'>
+                    Hi, I am Vanessa Huang (Min-Hsuan Huang), a junior at National Taiwan University majoring in Finance. 
+                    With a passion for data, I have dedicated the past year to expanding my knowledge and skills in this field. 
+                    I have gained proficiency in both front-end and back-end development, acquiring a strong foundation in various programming languages and frameworks. 
+                    With an insatiable thirst for knowledge and unwavering commitment to personal growth, I am ready to make a meaningful impact. 
+                </p>
+                <br>
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick = "opentab('skills')">Skills</p>
+                    <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
+                    <p class = "tab-links" onclick = "opentab('Internship')">Internship</p>
+                    <p class = "tab-links" onclick = "opentab('education')">Education</p>
+                </div>
+                <!-- Skills -->
+                <div class="tab-content active-tab" id = "skills">
+                    <ul>
+                        <li><span>Back-end</span><br>Python, SQL</li>
+                        <li><span>Front-end</span><br>HTML, CSS, Javascript</li>
+                        <li><span>Data Visualisation</span><br>Streamlit, Tableau</li>
+                    </ul>
+                </div>
+                <!-- Experience -->
+                <div class="tab-content" id = "experience">
+                    <ul>
+                        <li><span>Analyst   |   Project Member (Gogoro)</span><br>NTU Data Analytics Club</li>
+                        <li><span>Analyst of Equity Capital Market / Global Investment Research</span><br>TMBA</li>
+                        <li><span>Regional finalist, top 6 shortlist</span><br>J.P. Morgan Private Bank Challenge</li>
+                        <li><span>Officer of Global Partnership and Delegates Affairs</span><br>Global Initiatives Symposium in Taiwan</li>
+                    </ul>
+                </div>
+                <!-- Internship -->
+                <div class="tab-content" id = "Internship">
+                    <ul>
+                        <li><span>Asscotiate Business Consultant</span><br>IBM</li>
+                        <li><span>Actuarial and Insurance Solutions Consulting Intern</span><br>Deloitte</li>
+                    </ul>
+                </div>
+                <!-- Education -->
+                <div class="tab-content" id = "education">
+                    <ul>
+                        <li><span>Sep 2020 - present</span><br>National Taiwan University – Finance</li>
+                        <li><span>Sep 2023 - Feb 2024</span><br>Université de Lausannee – Business</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----Data Science Portfolio---------------------------------------------------------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class = "sub-title">Data Science Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-regular fa-moped"></i>
+                <h2>Gogoro - Public & Consumer Opinion Analysis</h2>
+                    <ul>
+                        <li><span>Skill matrix</span><br>Web crawling, Language model application, Sentiment analysis, Data visualization</li>
+                        <br>
+                        <li><span>Tools</span><br>Python, Streamlit, CSS, HTML, ChatGPT</li>
+                    </ul>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-regular fa-location-dot"></i>
+                <h2>Travel Assistant</h2>
+                    <ul>
+                        <li><span>Skill matrix</span><br>Web crawling, Data visualization, EDA, Machine Learning (Prediction)</li>
+                        <br>
+                        <li><span>Tools</span><br>Python, CSS, HTML</li>
+                    </ul>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-smoking"></i>
+                <h2>Freedom from Tobacco</h2>
+                    <ul>
+                        <li><span>Skill matrix</span><br>Fundamental Logic of</li>
+                        <br>
+                        <li><span>Tools</span><br>Python, Pygame</li>
+                    </ul>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-airbnb"></i>
+                <h2>Airbnb Analysis in NYC</h2>
+                    <ul>
+                        <li><span>Skill matrix</span><br>Fundamental Logic of</li>
+                        <br>
+                        <li><span>Tools</span><br>Python, Pygame</li>
+                    </ul>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-database"></i>
+                <h2>Freedom from Tobacco</h2>
+                    <ul>
+                        <li><span>Skill matrix</span><br>Fundamental Logic of</li>
+                        <br>
+                        <li><span>Tools</span><br>Python, Pygame</li>
+                    </ul>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+        <!-- <a href="#" class = "btn">See more</a> -->
+    </div>
+</div>
+<br>
+<br>
+<br>
+<!-- -----Finance  |  Consulting Portfolio---------------------------------------------------------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class = "sub-title">Finance  |  Consulting Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/JP_Morgan.jpg">
+                <div class="layer">
+                    <h3>J.P. Morgan Private Bank Challenge</h3>
+                    <p align = 'center'>
+                        Studied mainly in the fields of alternatives, fixed income, and macroeconomics
+                    </p>
+                    <a href="JP_Morgan.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Deloitte_report.jpg">
+                <div class="layer">
+                    <h3>Deloitte Consulting Project</h3>
+                    <p align = 'center'>
+                        Do research on the annual report of the foreign insurance company, to see the improvement Taiwanese insurance company can make
+                    </p>
+                    <a href="Deloitte.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/REITs.jpg">
+                <div class="layer">
+                    <h3>TMBA – REITs</h3>
+                    <p align = 'center'>
+                        Analysis of economic conditions in various countries, currency policies, investment strategies, 
+                        and investment targets, providing recommendations accordingly
+                    </p>
+                    <a href="REITS.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/USD.jpg">
+                <div class="layer">
+                    <h3>TMBA – USDX</h3>
+                    <p align = 'center'>
+                        Analysis of economic conditions in various countries, currency policies, investment strategies, 
+                        and investment targets, providing recommendations accordingly
+                    </p>
+                    <a href="Deloitte.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/solar_panel.jpg">
+                <div class="layer">
+                    <h3>TMBA – Equity Research</h3>
+                    <p align = 'center'>
+                        Analysis of economic conditions in various countries, currency policies, investment strategies, 
+                        and investment targets, providing recommendations accordingly
+                    </p>
+                    <a href="Deloitte.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- <a href="#" class = "btn">See more</a> -->
+    </div>
+</div>
+
+<!-- -----Contact---------------------------------------------------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>   h0935333125@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>   +886 935333125</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100021570548500"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/v.h_________/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vanessa-huang-760a8a232/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="button_CV">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <embed src="images/CV.pdf" width="800px" height="350px" />
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Vanessa Huang.</p>
+    </div>    
+</div>
+
+<!-- -----JavaScript---------------------------------------------------------------------------- -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link"); 
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link"); //event.currentTarget = the element that triggered the event
+        document.getElementById(tabname).classList.add("active-tab"); //document.getElementById(tabname) = the element with the id attribute with the specified value
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwmDfwWpRdht3UNxDmny3x-CkZKd766XVDusS0LiWvx5ayf-A9LpLxeYBZJzBcMUaw06g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => 
+            {
+                msg.innerHTML = "Message sent successfully!";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                }, 5000); //after 5 seconds, the message will disappear
+                form.reset();  //reset the form
+            }
+        )
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
+
+

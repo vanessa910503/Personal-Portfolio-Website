@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; /* add a smooth scroll */
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Vanessa.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding:10px 10%; 
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px; /* Adjust the width value to make it bigger */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left: -15px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px; /* Increase the left margin to increase the space */
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{ 
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(35,207,249,1) 0%, rgba(181,38,254,1) 100%);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    background: linear-gradient(90deg, rgba(35,207,249,1) 0%, rgba(181,38,254,1) 100%);
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    -webkit-text-fill-color: transparent; /* For Safari/Chrome */
+    background-clip: text;
+    color: transparent;
+}
+
+/* -----about--------------------------------------------------------------------------- */
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px; /* make the image round */
+}
+
+.about-col-2{
+    flex-basis: 60%; /* make the text 60% of the page */
+    padding-left: 50px;
+}
+
+.about-col-2 p{
+    line-height: 1.5;
+}
+
+.sub-title{
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.tab-titles{
+    margin: 20px 0 40px;
+    display: flex;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer; /* change the cursor to a pointer when you hover over the links */
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(35,207,249,1) 0%, rgba(181,38,254,1) 100%);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+#skills li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 25px; /* Adjust the font size as needed */
+}
+
+#skills span{
+    color: #5099FB;
+    font-size: 18px;
+}
+
+#experience li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
+#experience span{
+    color: #5099FB;
+    font-size: 15px;
+}
+
+#Internship li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 25px; /* Adjust the font size as needed */
+}
+
+#Internship span{
+    color: #5099FB;
+    font-size: 18px;
+}
+
+#education li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 25px; /* Adjust the font size as needed */
+}
+
+#education span{
+    color: #5099FB;
+    font-size: 18px;
+}
+
+.tab-content{
+    display: none; /* Hide the tab content */
+}
+
+.tab-content.active-tab{
+    display: block; /* Show the tab content */
+}
+
+/* -----services--------------------------------------------------------------------------- */
+.services-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 40px;
+    margin-top: 50px;
+    scroll-snap-type: x mandatory;
+}
+  
+.services-list > div {
+    flex: 0 0 350px; /* make the div 350px wide */
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+  
+.services-list > div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+  
+.services-list > div h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000000;
+}
+  
+.services-list > div ul li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.services-list > div ul li span {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 800;
+}
+  
+.services-list > div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list > div:hover {
+    background: linear-gradient(90deg, rgba(35, 207, 249, 1) 0%, rgba(181, 38, 254, 1) 100%);
+    transform: translateY(-10px);
+} 
+
+/* -----portfolio--------------------------------------------------------------------------- */
+
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    /* display: grid; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    display: flex;
+    overflow-x: scroll; /* add a horizontal scroll */
+    scroll-snap-type: x mandatory; /* snap the items to the start of the scroll area */
+}
+
+.work{
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    position: relative; 
+    overflow: hidden; /* hide the overflow */
+}
+
+.work img{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    display: block; /* make the image a block element */
+    transition: transform 0.5s; /* add a transition to the transform property */
+}
+  
+.work:last-child {
+    margin-right: 0; /* Remove margin for the last work */
+}
+  
+
+/* background: linear-gradient(90deg, rgba(35,207,249,1) 0%, rgba(181,38,254,1) 100%); */
+.layer{
+    width: 100%;
+    height: 0; 
+    background: linear-gradient(rgba(0,0,0,0.6), #4D9FFE); /* add a gradient to the layer */
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden; /* hide the overflow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s; /* add a transition to the height property */
+}
+
+.layer h3{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #4D9FFE;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* make the button round, it will be a circle */
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1); /* make the image bigger */
+}
+
+.work:hover .layer{
+    height: 100%; /* make the layer 100% of the height */
+}
+
+/* .btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: none;
+    background: 1px #4D9FFE;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+} */
+
+
+.btn {
+    display: block;
+    border: none;
+    position: relative;
+    margin: 30px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    background: #000000;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+}
+  
+.btn::after {
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: -1;
+margin: -2px;
+border-radius: inherit;
+background-image: linear-gradient(90deg, rgba(35,207,249,1) 0%, rgba(181,38,254,1) 100%);
+}
+
+.btn:hover{
+    background: linear-gradient(90deg, rgba(35,207,249,1) 0%, rgba(181,38,254,1) 100%);
+}
+/* -----contact--------------------------------------------------------------------------- */
+
+.contact-left{
+    flex-basis: 35%; /* make the contact form 35% of the page */
+    flex: 1;
+    margin-top: -10px;
+}
+
+.contact-right{
+    flex-basis: 60%; 
+    flex: 1;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color:#39B4FB;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: #ababab;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    background: linear-gradient(90deg, rgba(35,207,249,1) 0%, rgba(181,38,254,1) 100%);
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    -webkit-text-fill-color: transparent; /* For Safari/Chrome */
+    background-clip: text;
+    color: transparent;
+    transform: translateY(-5px);
+}
+
+.button_CV{
+    margin: 50px auto;
+    width: fit-content;
+    border: none;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    background: #4D9FFE;
+    margin-top: 68px;
+}
+
+.button_submit{
+    margin: 50px auto;
+    width: fit-content;
+    border: none;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    background: #4D9FFE;
+    cursor: pointer;
+}
+
+.contact-right{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* -----responsive--------------------------------------------------------------------------- */
+nav .fa-solid{
+    display: none; /* hide the hamburger icon */
+}
+
+@media only screen and (max-width: 600px){ /* if the screen is smaller than 600px */
+    #header{
+        background-image: url(images/phone_Vanessa.png);
+        width: auto;
+        height: 600px;
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block; /* hide the hamburger icon */
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul{
+        background: linear-gradient(90deg, rgba(35,207,249,1) 0%, rgba(181,38,254,1) 100%);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2; /* make the nav bar on top of everything */
+        transition: right 0.5s; /* add a transition to the right property */
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
